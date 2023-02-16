@@ -36,10 +36,11 @@
     display: block;
 }
 
-.SHUpromoteBN>a{
+.SHUpromoteBN>a {
     /* 檔期僅顯示第一張 */
     display: none !important;
 }
+
 .SHUpromoteBN>a:first-child {
     /* 檔期僅顯示第一張 */
     display: block !important;
@@ -49,13 +50,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #b3030d;
-    background-image: url(2212SHUBG.jpg);
+    background-color: #ffe9e2;
+    background-image: url(SHUBG.jpg);
     width: 100%;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .safeText2101 {
@@ -121,8 +122,8 @@ body {
     /*分類大標樣式*/
     /* pointer-events: none; */
     cursor: default;
-    /* filter: drop-shadow(3px 3px 3px #0000004d);
-    -webkit-filter: drop-shadow(3px 3px 3px #0000004d); */
+    filter: drop-shadow(3px 3px 3px #ffffff85);
+    -webkit-filter: drop-shadow(3px 3px 3px #ffffff85);
 }
 
 .SHUcategorytitle span {
@@ -160,7 +161,7 @@ html {
 
 .SHUnavbar a {
     color: #fff;
-    background: #9c0000;
+    background: #000000;
     margin: 0 .2em;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -177,7 +178,7 @@ html {
 /* 選單hover動態 */
 .SHUnavbar a:hover {
     color: #fff;
-    background: #bb0000;
+    background: #960000;
     opacity: 1;
 
 
@@ -208,9 +209,12 @@ html {
 
 
     .container>.row {
-        background-image: url(2212SHUBG.jpg);
+        background-image: url(SHUBGm.jpg);
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: center;
+        /* background-repeat: repeat; */
+        /* background-size: cover; */
+        /* background-position: 50% 50%; */
 
     }
 
@@ -246,7 +250,7 @@ html {
 
     .SHUnavbar a {
         color: #fff;
-        background: #9c0000;
+        background: #000000;
         opacity: 1;
         white-space: nowrap;
         padding: 0.5em 0.8em;
