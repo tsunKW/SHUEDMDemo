@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*回版頭*/
+#gotop { display: none; position:fixed; z-index:5; right:20px; bottom:30px;padding:10px 10px 3px 10px; border-radius:50px; font:12px/30px Verdana; text-align:center; color:#000;  background-color:rgba(255,255,255,0.7); cursor:pointer;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;}
+#gotop:hover { padding-top:40px; background-color:#fff;} 
+#gotop::before { content: ""; position:absolute; top:7px; left:18px; width: 0; height: 0; border: 4px solid #000; border-color: transparent transparent #000; }
+	@media screen and (max-width:767px){
+		#gotop { right:20px; bottom:65px; }
+	}
+
+
+
+
+/*浮層嘿嘿*/
+.blackBox_play {}
+.blackBox { display:none; z-index:12; position:absolute; top:0px; left:0px; width:100%; height:100%; background-color: rgba(34,34,34,0.75); }
+.blackBox * { font-family:"微軟正黑體"; box-sizing:border-box;}
+.blackBox  a { text-decoration:none;}
+/*浮層基本*/
+.blackBox .box .button {  border-top:1px solid #d6d6d6; text-align:center; font-size:1.25rem; line-height:3.5rem; font-weight:bold;}
+.blackBox .box .but-close { clear:both; width:100%;}
+.blackBox .box .but-close a { display:inline-block;  width:100%; height:100%; color:#333;}
+.blackBox .box h3 span.close { position:absolute; top:6px; right:5px; display:block; border:2px solid #fff; border-radius:5px; width:63px; height:33px; font-size:1rem; line-height:2rem; text-align:center;}
+.blackBox .box h3 span.close a { display:inline-block; width:100%; height:100%; color:#fff;}
+.blackBox .Boxclose { position:absolute; top:0px; left:0px; width:100%; height:100%; background-color: transparent;}
+.blackBox .box h4 {height: 3rem; font-size: 0.8rem; font-weight: 100; text-align: center; color: #000;}
+
+/*通知浮層*/
+.agreeArea { z-index:15; position:relative; top:5%; margin:0 auto 30px; width:98%; max-width:900px;text-align:left; font-family:"Century Gothic", "微軟正黑體", sans-serif; /*text-align:justify; word-break:break-all;*/}
+.agreeArea img{ width:100%; height:auto;}
+.agreeArea .box { border-radius:0px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color:#fff; overflow:hidden;}
+.agreeArea .box .txtArea {overflow:auto; overflow-y:auto; -webkit-overflow-scrolling:touch;    padding: 10px;}
+.agreeArea .box h3 { padding: 0; margin: 0; height: 3rem; font-size: 1.25rem; font-weight: 800; line-height: 3rem; text-align: center; color: #fff; background-color: #660101;}
+.agreeArea .box h4 { margin:0 0 0 10px; padding:0; height:3rem; font-size:1.5em; font-weight:800;line-height:3rem; ; color:#000;text-align:left;  }
+.agreeArea .box p { margin:10px auto; margin-top:1.2em; padding:0 0 0 24px; text-align:center; font-size:1em;  line-height:1.2em; color:#000;}
+.agreeArea .box p b { display:block; padding-bottom:0px;}
+.agreeArea .box p span { }
+.agreeArea .box .qrcodeimg { text-align:center; }
+.agreeArea .box .qrcodeimg a { color:#006afe;}
+.agreeArea .box .qrcodeimg img { width:100%; height:auto;}
+.agreeArea .box .agree_table table { margin:20px auto; border-collapse:collapse; width:90%; text-align:center;}
+.agreeArea .box .agree_table th { padding:5px; border:1px solid #CCC; width:33%; font-size:1.2em; }
+.agreeArea .box .agree_table td { padding:5px; border:1px solid #CCC; font-size:0.9em; }
+.agreeArea .box .agree_table th a{ color:#c70026; text-decoration:underline;}
+.agreeArea .box .xxx{ display:block; width:80%; height:40px; font-size:1.5em; text-align:center; line-height:40px; color:#FFF; background-color:#7048A0; margin:0 auto; margin-bottom:20px; margin-top:10px; font-weight:bold; border-radius:10px;}
+.agreeArea .box ul,
+.agreeArea .box ol { margin:0;padding:0;}
+.agreeArea .box li { margin:0 20px 10px 30px; font-size:1.2em; text-align: justify;}
+.agreeArea .box table { margin: 0 8%; width:84%;  border-collapse:collapse;    text-align: center;}
+.agreeArea .box th { padding:5px; border:1px solid #CCC; background:#eee; font-size:1.2em; }
+.agreeArea .box td { padding:5px; border:1px solid #CCC; font-size:1.2em; vertical-align:top; }
+.agreeArea .box table ul,
+.agreeArea .box table ol { padding:0 0 0 20px;}
+.agreeArea .box table li { margin:0 0 10px 0px;}
+	@media screen and (max-width:767px){
+	.agreeArea .box table { margin: 0 2%; width:95%;  border-collapse:collapse;    text-align: center;}
+	.agreeArea .box h3 { margin:0; padding:0; height:3rem; font-size:15pt; font-weight:800;line-height:3rem;color:#fff;text-align:center; background-color:#92001c;}
+	.agreeArea .box h4 { margin:0 0 0 10px; padding:0; height:2.8rem; font-size:1.2em; font-weight:800;line-height:3rem; ; color:#000;text-align:left;  }
+	.agreeArea .box p { margin:10px auto; margin-top:1em; padding:0 0 0 24px; text-align:center; font-size:0.8em;  line-height:1.1em; color:#000;}
+	}
+
+
+	  	.momocard_link {padding:0 0 8px 0;margin: 0 auto;width:100%;}
+		.agree_momocard .momocard_link h3{ position: relative; padding:0;margin:0 auto;text-align:center;font-size:18px; color:#000 !important;background-color: #e6e6e6 !important;}
+		.brand_coupon .momocard_label_2  {display: block;left: 10px;top: 0px;padding:2% 0 0 0;width: 55px;height: 50px;font-size:14px;font-weight:800;color:#fff;line-height:18px;text-align:center;;background-color: #f52e65;}	
+	@media screen and ( max-width:736px) {
+		.agree_momocard .momocard_link h3 {padding:0;margin:0 auto;text-align:center;}
+		.brand_coupon .momocard_label_2  {display: block;z-index:2;left:0vw;top:18vw;padding:7% 0 0 1%;width: 38px;height:47px;font-size:10px;font-weight:800;color:#fff;line-height:14px;text-align:center;;background-color: #f52e65;}
+	  } 
+	
+/*黏人快速鍵(白色款)*/
+.fixed_Area {z-index:999; position:fixed; top:20px; right:0px; width:100px; font-weight:800; font-size:16px; line-height:48px; font-family:Century Gothic, "微軟正黑體",Helvetica; text-align:center;
+			-webkit-transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); -webkit-transform-origin:top right; transform-origin:top right;
+			  -webkit-transition: all 0.2s ease;
+				 -moz-transition: all 0.2s ease;
+				  -ms-transition: all 0.2s ease;
+				   -o-transition: all 0.2s ease;
+					  transition: all 0.2s ease;}
+.fixed_Area a { display:block; text-decoration: none; color: #000;}
+.fixed_Area img {-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.fixed_Area .box ul { margin:0; padding:0; list-style:none;}
+.fixed_Area .box li { margin:0 0 1px 0; padding:0; height:48px; background-color:rgba(255,255,255,0.6);}
+.fixed_Area .box li a { letter-spacing:-1px;height:48px; overflow:hidden;}
+.fixed_Area .box li a:hover { background-color:rgba(255,255,255,1);}
+.fixed_Area .box li.cate-hover { background-color:rgba(255,255,255,1);}
+.fixed_Area .box h2 { margin:0; padding:0;}
+	/*快速導覽*/
+	.fixed_Area h3 { position: absolute; top:100px; right:-50px; margin:0; padding:35px 0 0 0; border-radius:10px; width:48px; height:115px; font-size: 16px; line-height:30px; writing-mode: tb-lr; writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; background-color:#00000099; color:#fff;text-align:left; cursor:pointer;
+			-webkit-transform-origin:top left; transform-origin:top left;
+			  -webkit-transition: all 0.2s ease;
+				 -moz-transition: all 0.2s ease;
+				  -ms-transition: all 0.2s ease;
+				   -o-transition: all 0.2s ease;
+					  transition: all 0.2s ease;}
+	.fixed_Area h3 i { position: absolute; top:0; right:0; display:block; width:50px; height:50px; cursor:pointer;}
+	.fixed_Area h3 i:before { content: ""; position:absolute; top:41%; left:37%; display:block; border:1px solid #fff; border-width:0 1px 1px 0; width:15%; height:15%; -webkit-transform:translate(-50%,-50%) rotate(135deg); transform:translate(-50%,-50%) rotate(135deg); -webkit-transition: all 0.3s ease; transition: all 0.3s ease;}
+			/*黑色款*/
+			.fixed_Area.fixed_Area-dark a { color: #fff;}
+			.fixed_Area.fixed_Area-dark .box li { background-color:rgba(0,0,0,0.5);}
+			.fixed_Area.fixed_Area-dark .box li a:hover { background-color:rgba(0,0,0,1);}
+			.fixed_Area.fixed_Area-dark .box li.cate-hover { background-color:rgba(0,0,0,1);}
+            .fixed_Area.fixed_Area-dark h3 {background-color:rgba(0,0,0,0.5);color: #fff; }
+            .fixed_Area.fixed_Area-dark h3  i:before { border-color:#fff;}
+
+
+
+			/*收合黏人精*/
+			.fixed_Area.fixed_Area_hide { -webkit-transform: rotate3d(0,0,0,0deg) translate3d(150px,0,0); transform: rotate3d(0,0,0,0deg) translate3d(150px,0,0); }
+			.fixed_Area.fixed_Area_hide h3 { -webkit-transform: rotate3d(0,0,0,0deg) translate3d(-185px,0,0); transform: rotate3d(0,0,0,0deg) translate3d(-185px,0,0); 
+											 -webkit-transition-delay:0.2s; transition-delay:0.2s;}
+											 
+											 
+
+
+/*飄-上下*/
+.uptodown-play { -webkit-animation:uptodown-play 1.5s infinite alternate;
+				         animation:uptodown-play 1.5s infinite alternate;}
+	@-webkit-keyframes uptodown-play { 
+		0% { 
+			-webkit-transform: translate(0,-10px);  
+		} 
+		100% { 
+			-webkit-transform: translate(0,0);
+		}
+	}
+	@keyframes uptodown-play { 
+		0% { 
+			transform: translate(0,-10px);  
+		} 
+		100% { 
+			transform: translate(0,0);
+		}
+	}
+
+/*飄-下上*/
+.downtoup-play { -webkit-animation:downtoup-play 1.5s infinite alternate;
+				         animation:downtoup-play 1.5s infinite alternate;}
+	@-webkit-keyframes downtoup-play { 
+		0% { 
+			-webkit-transform: translate(0,0);  
+		} 
+		100% { 
+			-webkit-transform: translate(0,-10px);
+		}
+	}
+	@keyframes downtoup-play { 
+		0% { 
+			transform: translate(0,0);  
+		} 
+		100% { 
+			transform: translate(0,-10px);
+		}
+	}
+
+
+
+/*轉轉3*/
+.rotate3-play { -webkit-animation:rotate3-play 40s linear infinite ;
+				       animation:rotate3-play 40s linear infinite ;}
+	@keyframes rotate3-play {
+	  100% { 
+			transform: rotate(-180deg);
+	  }
+	}
+
+/*背景飄上*/
+.bgupup-play { -webkit-animation:bgupup-play 40s linear infinite ;
+				       animation:bgupup-play 40s linear infinite ;}
+	@keyframes bgupup-play {
+	  100% { background-position: center -925px;
+	  }
+	}
+
+
+/*心跳A*/
+.heartbeat-play {-webkit-animation-duration: 1s;  animation-duration: 1s;  -webkit-animation-name: heartbeat-play;  animation-name: heartbeat-play;  -webkit-animation-iteration-count: infinite;    animation-iteration-count:infinite;/* -webkit-animation-direction: alternate;animation-direction: alternate;*/}
+	@-webkit-keyframes heartbeat-play {   
+		0%   { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95); filter:brightness(100%);} 
+		60%  { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); filter:brightness(100%);}
+		100% { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+		}
+	@keyframes heartbeat-play { 
+		0%   { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95); filter:brightness(100%);} 
+		60%  { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); filter:brightness(100%);}
+		100% { -webkit-transform: scale(1); transform: scale(1); filter:brightness(120%);} 
+	}
+
+/*彈跳*/	
+.bounce-play { -webkit-animation:bounce-play 3s linear infinite ;
+				          animation:bounce-play 3s linear infinite ;}
+	@-webkit-keyframes bounce-play {
+	  0%, 5%, 12.5%, 20%, 25% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	
+	  10% {
+		-webkit-transform: translateY(-10%);
+		transform: translateY(-10%);
+	  }
+	
+	  15% {
+		-webkit-transform: translateY(-5%);
+		transform: translateY(-5%);
+	  }
+	}
+	
+	@keyframes bounce-play {
+	  0%, 5%, 12.5%, 20%, 25% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	
+	  10% {
+		-webkit-transform: translateY(-10%);
+		transform: translateY(-10%);
+	  }
+	
+	  15% {
+		-webkit-transform: translateY(-5%);
+		transform: translateY(-5%);
+	  }
+	}
+
+/*主標微亮*/		  
+.minbright-play { -webkit-animation:minbright-play 1.2s infinite alternate; animation:minbright-play 1.2s infinite alternate ;}
+	@-webkit-keyframes minbright-play {
+	  0% { 
+		filter:brightness(120%);
+	  }
+	  100% { 
+		filter:brightness(100%);
+	  }
+	}
+	@keyframes minbright-play {
+	  0% { 
+		filter:brightness(120%);
+	  }
+	  100% { 
+		filter:brightness(100%);
+	  }
+	}
+
+/*閃光1*/				  
+.brightness1-play { -webkit-animation:brightness1-play 4s infinite ; animation:brightness1-play 4s infinite ;}
+	@keyframes brightness1-play {
+	  0% { 
+		filter:brightness(100%);
+	  }
+	  92% { 
+		filter:brightness(100%);
+	  }
+	  94% { 
+		filter:brightness(200%);
+	  }
+	  96% { 
+		filter:brightness(100%);
+	  }
+	  98% { 
+		filter:brightness(200%);
+	  }
+	  100% { 
+		filter:brightness(100%);
+	  }
+	}

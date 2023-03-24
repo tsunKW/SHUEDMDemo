@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*浮層嘿嘿*/
+.blackBox { clear: both; display:none; z-index:999; position:absolute; top:0px; left:0px; width:100%; height:100%; background-color: rgba(34,34,34,0.75); }
+.blackBox * { font-family:"微軟正黑體", "Microsoft JhengHei", Arial; box-sizing:border-box;}
+.blackBox  a { text-decoration:none;}
+.blackBox_play { z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(34,34,34,0.75);}
+
+/*浮層基本*/
+.blackBox .box .button { border-top: 1px solid #d6d6d6; text-align: center; font-size: 1.25rem; line-height: 3.5rem; font-weight: bold;}
+.blackBox .box .button a{ text-decoration: none;}
+.blackBox .box .but-close { clear: both; width: 100%;}
+.blackBox .box .but-close a { display: block; color: #333;}
+.blackBox .box h3 span.close { position: absolute; top: 6px; right: 5px; display: block; border: 2px solid #000; border-radius: 5px; width: 63px; height: 33px; font-size: 1rem; line-height: 2rem; text-align: center;}
+.blackBox .box h3 span.close a { display: inline-block; width: 100%; height: 100%; color: #000; text-decoration: none;}
+
+
+/*顏色控制*/
+.spcolor{ color:#ab7678;}
+.agreeArea .box h3{background-color:#ab7678;}
+
+/*通知浮層*/
+.agreeArea { z-index:1;  position: relative; top: 5%; margin: 0 auto 30px; width: 94%; max-width: 900px; font-family:"Century Gothic", "微軟正黑體", sans-serif;  }
+.agreeArea img { width:100%; height:auto;}
+.agreeArea .box { border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: #fff; overflow: hidden;}
+.agreeArea .box h3 { padding: 0; margin: 0; height: 3rem; font-size: 1.25rem; font-weight: 800; line-height: 3rem; text-align: center; color:#000000; }
+
+
+/*內容*/
+.agreeArea .txtArea { height:600px; overflow:auto; overflow-y:auto; -webkit-overflow-scrolling:touch; text-align: left; color: #333;}
+.agreeArea .txtArea h2,
+.agreeArea .txtArea h4,
+.agreeArea .txtArea p { margin: 0; padding: 0;}
+.agreeArea .txtArea h2 { margin: 0; padding: 0.5em 1em 1em 1em; font-size: 1.45rem;}
+.agreeArea .itembox { display: flex; width: 100%; margin-bottom: 1em;}
+.agreeArea .itembox h4 {width:calc(100% - 9em); margin:0; padding:0; font-size:1.25rem; font-weight:800; line-height:1; text-align:left; color:#000; box-sizing: border-box; padding: 0 1em}
+
+
+
+.agreeArea .itembox .itembox_box {  width:calc(100% - 5em); margin:0; padding:0 1em 0 0; font-size:1rem; text-align:left; line-height:1.65rem; color:#000;font-weight:500;}
+
+
+.agreeArea .itembox table { width:100%; margin:1em 0 0 0; padding:0; max-width:465px;    font-size: 0.9em; line-height: 1.5; border-collapse:collapse; font-weight: bolder; text-align: left}
+.agreeArea .itembox table:first-child { margin-top: 0;}
+.agreeArea .itembox th { width: 34%; padding:6px 6px 6px 18px; border:1px solid #CCC;  }
+.agreeArea .itembox td { width:66%; padding:6px 6px 6px 18px; border:1px solid #CCC; vertical-align:top; }
+.agreeArea .itembox table tr:nth-child(odd){background:#eee;}
+
+/*PC*/
+@media screen and ( min-width:737px) {
+.agreeArea .itembox h4 {width:calc(100% - 35em);}
+
+.agreeArea .itembox table { width:84%; margin:1em 0 0 0; padding:0; max-width:465px; font-size:1rem; line-height: 1.5; border-collapse:collapse; font-weight: bolder; text-align: left}
+.agreeArea .itembox table:first-child { margin-top: 0;}
+.agreeArea .itembox th { width: 25%; padding:6px 6px 6px 18px; border:1px solid #CCC;  }
+.agreeArea .itembox td { width:75%; padding:6px 6px 6px 18px; border:1px solid #CCC; vertical-align:top; }
+.agreeArea .itembox table tr:nth-child(odd){background:#eee;}  
+}
+
+/*手機*/
+@media screen and ( max-width:736px) {
+.agreeArea .itembox.itemwrap {flex-wrap: wrap}
+.agreeArea .itembox.itemwrap .itembox_box {  width:100%; margin-bottom: 2em;}
+.agreeArea .itembox.itemwrap .itembox_box {padding:1em 2em 0 2em; }
+  
+  
+  
+  
+  
+}
+
+
+
+.agreeArea .itembox ul,
+.agreeArea .itembox ol { margin: 0; padding-left: 1em;}
+.agreeArea .itembox li { margin:0 0 1em 0px;line-height: 1.65rem;}
+
+.agreeArea .box .agree_table table { margin:20px auto; border-collapse:collapse; width:90%; text-align:center;}
+.agreeArea .box .agree_table th { padding:5px; border:1px solid #CCC; width:33%; font-size:0.9em; }
+.agreeArea .box .agree_table td { padding:5px; border:1px solid #CCC; font-size:0.9em; }
+.agreeArea .box .agree_table th a{ color:#c70026; text-decoration:underline;}
+.agreeArea .box .xxx{ display:block; width:80%; height:40px; font-size:1.5em; text-align:center; line-height:40px; color:#FFF; background-color:#7048A0; margin:0 auto; margin-bottom:20px; margin-top:10px; font-weight:bold; border-radius:10px;}
+
+.agreeArea .box .qrcodeimg { text-align:center; }
+.agreeArea .box .qrcodeimg a { color:#006afe;}
+.agreeArea .box .qrcodeimg img { width:100%; height:auto;}
+
+
+/*通知浮層*/
