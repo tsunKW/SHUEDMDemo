@@ -59,8 +59,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.safeText2101 {
-    color: #fff;
+.safeText {
+    color: #000;
     text-align: center;
     font-size: 0.8rem;
     font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
@@ -122,8 +122,8 @@ body {
     /*分類大標樣式*/
     /* pointer-events: none; */
     cursor: default;
-    filter: drop-shadow(3px 3px 3px #00000085);
-    -webkit-filter: drop-shadow(3px 3px 3px #00000085);
+    /* filter: drop-shadow(3px 3px 3px #00000085); */
+    /* -webkit-filter: drop-shadow(3px 3px 3px #00000085); */
 }
 
 .SHUcategorytitle span {
