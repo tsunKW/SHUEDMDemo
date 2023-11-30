@@ -192,7 +192,7 @@ html {
         background-attachment: scroll;
         background-position: 50% 50%;
         background-image: none;
-        background-color: #000;
+        background-color: #fdf3d0;
         /* background: linear-gradient(90deg, #ffdcc8 0%, #ffe5d4 50%, #ffdcc8 100%); */
     }
 
@@ -209,13 +209,12 @@ html {
     }
 
 
-    .container>.row {
-        /* background-image: url(SHUBG.jpg); */
-        background-size: cover;
-        background-position: center;
+    .container>.row ,.mbBG {
+        background-image: url(SHUBGm.jpg);
+        /* background-position: center; */
         /* background-repeat: repeat; */
-        /* background-size: cover; */
-        /* background-position: 50% 50%; */
+        background-size: cover;
+        background-position: 50% 50%;
 
     }
 
