@@ -20,7 +20,10 @@
         -webkit-filter: brightness(.95) contrast(1.5);
     }
 } */
-
+:root {
+    --navColor: #920000;
+    --navColor_hover: #bb0000;
+  }
 .col-6 .row img {
     /* 組合僅顯示第一張 */
     display: none;
@@ -37,7 +40,7 @@
 }
 
 .SHUpromoteBN>a {
-    /* 檔期僅顯示第一張 */
+    /* 檔期僅顯示第一張 */  
     display: none !important;
 }
 
@@ -51,7 +54,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f8;
-    /* background-image: url(SHUBG.jpg); */
+    background-image: url(SHUBG.jpg);
     width: 100%;
     background-position: top center;
     background-size: cover;
@@ -87,8 +90,8 @@ body {
 }
 
 .col-6 img {
-    filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-    -webkit-filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5)); 
+    /* filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5)); */
+    /* -webkit-filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));  */
 }
 
 .col-6 a:hover {
@@ -125,8 +128,8 @@ body {
     /*分類大標樣式*/
     /* pointer-events: none; */
     cursor: default;
-    filter: drop-shadow(3px 3px 3px #00000085);
-    -webkit-filter: drop-shadow(3px 3px 3px #00000085);
+    /* filter: drop-shadow(3px 3px 3px #00000085); */
+    /* -webkit-filter: drop-shadow(3px 3px 3px #00000085); */
 }
 
 .SHUcategorytitle span {
@@ -161,27 +164,35 @@ html {
 .carousel2102 {
     margin-top: -42%;
 }
-
 .SHUnavbar a {
     color: #fff;
-    background: #000;
-    margin: 0 .2em;
+    /* background: var(--navColor); */
+    /* margin: 0 .2em; */
+    padding: .4em 0;
     background-size: 70%;
+    border-right: #7c7c7c solid .5px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transition-duration: .3s;
     font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
-    font-weight: 500;
-    font-size: 1.08rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     line-height: 20px;
+    letter-spacing: 3px;
+    line-height: 1.2rem;
     text-align: center;
     vertical-align: middle;
+
+}
+.SHUnavbar a:last-child {
+    border-right: #fff solid 0px;
+
 }
 
 /* 選單hover動態 */
 .SHUnavbar a:hover {
-    color: #fff;
-    background: #ad0000;
+    /* color: #ffceb2; */
+    background: linear-gradient(90deg, #ffffff00 0%, #ffffff22 30%,  #ffffff22 70%,#ffffff00 100%);
     opacity: 1;
 
 
@@ -195,7 +206,7 @@ html {
         background-attachment: scroll;
         background-position: 50% 50%;
         background-image: none;
-        background-color: #fdf3d0;
+        background-color: #000000;
         /* background: linear-gradient(90deg, #ffdcc8 0%, #ffe5d4 50%, #ffdcc8 100%); */
     }
 
@@ -213,9 +224,9 @@ html {
 
 
     .container>.row ,.mbBG {
-        /* background-image: url(SHUBGm.jpg); */
-        background-color: #421401;
-        /* background-position: center; */
+        background-image: url(SHUBG.jpg);
+        /* background-color: #421401; */
+        background-position: center;
         /* background-repeat: repeat; */
         background-size: cover;
         background-position: 50% 50%;
@@ -250,14 +261,17 @@ html {
     .SHUnavbar {
         flex-wrap: nowrap;
         align-items: center;
+        padding: .5em;
     }
 
     .SHUnavbar a {
         color: #fff;
-        background: #800000;
+        /* background: var(--navColor); */
         opacity: 1;
         white-space: nowrap;
-        padding: 0.5em 0.8em;
+        padding: 0em 0.8em;
+        font-size: 1.08rem;
+        line-height: 1.08rem;
     }
 
     .SHUnavbar a:last-child {
