@@ -23,7 +23,8 @@
 :root {
     --navColor: #920000;
     --navColor_hover: #bb0000;
-  }
+}
+
 .col-6 .row img {
     /* 組合僅顯示第一張 */
     display: none;
@@ -40,7 +41,7 @@
 }
 
 .SHUpromoteBN>a {
-    /* 檔期僅顯示第一張 */  
+    /* 檔期僅顯示第一張 */
     display: none !important;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .safeText {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 0.8rem;
     font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
@@ -81,9 +82,21 @@ body {
 
 }
 
+.GObtn {
+    filter: saturate(.5);
+    opacity: .8;
+    transition: .3s ease;
+}
+
+.GObtn:hover {
+    filter: saturate(1);
+    opacity: 1;
+    transition: .3s ease;
+}
+
 .col-6:hover {
     /* 組合hover動態 */
-
+    transform: scale(.98);
     /* background-color: #00000028;
     transition-duration: .3s; */
 
@@ -164,8 +177,9 @@ html {
 .carousel2102 {
     margin-top: -42%;
 }
+
 .SHUnavbar a {
-    color: #fff;
+    color: #fff !important;
     /* background: var(--navColor); */
     /* margin: 0 .2em; */
     padding: .4em 0;
@@ -184,6 +198,7 @@ html {
     vertical-align: middle;
 
 }
+
 .SHUnavbar a:last-child {
     border-right: #fff solid 0px;
 
@@ -191,8 +206,8 @@ html {
 
 /* 選單hover動態 */
 .SHUnavbar a:hover {
-    /* color: #ffceb2; */
-    background: linear-gradient(90deg, #ffffff00 0%, #ffffff22 30%,  #ffffff22 70%,#ffffff00 100%);
+    color: #fff !important;
+    background: linear-gradient(90deg, #ffffff00 0%, #ffffff22 30%, #ffffff22 70%, #ffffff00 100%);
     opacity: 1;
 
 
@@ -223,7 +238,8 @@ html {
     }
 
 
-    .container>.row ,.mbBG {
+    .container>.row,
+    .mbBG {
         background-image: url(SHUBG.jpg);
         /* background-color: #421401; */
         background-position: center;
@@ -303,8 +319,9 @@ html {
 
 /* Swiper樣式區域 */
 .SHUswiper {
-    --swiper-theme-color: #fff;
-    --swiper-navigation-color: #fff;
+    overflow: hidden;
+    --swiper-theme-color: #cf0045;
+    --swiper-navigation-color: #aa0033;
     --swiper-navigation-size: 30px;
 }
 
@@ -315,8 +332,14 @@ html {
     /* --swiper-pagination-color: #cf0000; */
 }
 
+.swiper-pagination-bullet {
+    background: #cf0045;
+}
+
 .swiper-wrapper {
-    padding-bottom: 0;
+    padding-bottom: 5%;
+    height: auto;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -324,11 +347,7 @@ html {
         bottom: 5%;
     }
 
-  
-
-    .swiper-wrapper {
-        min-height: 50vw;
-    }
+    .swiper-wrapper {}
 
     .LIPswiper .swiper-wrapper {
         min-height: 105vw;
