@@ -20,6 +20,7 @@
         -webkit-filter: brightness(.95) contrast(1.5);
     }
 } */
+
 :root {
     --navColor: #920000;
     --navColor_hover: #bb0000;
@@ -57,7 +58,7 @@ body {
     background-color: #f9f9f8;
     background-image: url(SHUBG.jpg);
     width: 100%;
-    background-position: top center;
+    background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -69,10 +70,15 @@ body {
     font-size: 0.8rem;
     font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
 }
+.white{
+    color: #fff;
+
+}
 
 .row {
     /*fixed flexbox stretch images*/
     align-items: center !important;
+
 }
 
 .col-6 {
@@ -81,29 +87,16 @@ body {
     transition-duration: .3s;
 
 }
-
-.GObtn {
-    filter: saturate(.5);
-    opacity: .8;
-    transition: .3s ease;
-}
-
-.GObtn:hover {
-    filter: saturate(1);
-    opacity: 1;
-    transition: .3s ease;
-}
-
 .col-6:hover {
     /* 組合hover動態 */
-    transform: scale(.98);
+
     /* background-color: #00000028;
     transition-duration: .3s; */
 
 }
 
 .col-6 img {
-    /* filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5)); */
+    filter:  drop-shadow(0px 0px 4px rgba(255, 239, 186, 0.6));
     /* -webkit-filter: brightness(0.95) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));  */
 }
 
@@ -216,6 +209,7 @@ html {
 @media screen and (max-width: 768px) {
 
     body {
+        background-position: top center;
         background-size: 100%;
         background-repeat: repeat-y;
         background-attachment: scroll;
@@ -242,10 +236,9 @@ html {
     .mbBG {
         background-image: url(SHUBG.jpg);
         /* background-color: #421401; */
-        background-position: center;
+        background-position: top center;
         /* background-repeat: repeat; */
         background-size: cover;
-        background-position: 50% 50%;
 
     }
 
@@ -319,9 +312,8 @@ html {
 
 /* Swiper樣式區域 */
 .SHUswiper {
-    overflow: hidden;
-    --swiper-theme-color: #cf0045;
-    --swiper-navigation-color: #aa0033;
+    --swiper-theme-color: #fff;
+    --swiper-navigation-color: #fff;
     --swiper-navigation-size: 30px;
 }
 
@@ -332,14 +324,8 @@ html {
     /* --swiper-pagination-color: #cf0000; */
 }
 
-.swiper-pagination-bullet {
-    background: #cf0045;
-}
-
 .swiper-wrapper {
-    padding-bottom: 5%;
-    height: auto;
-
+    padding-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -347,7 +333,11 @@ html {
         bottom: 5%;
     }
 
-    .swiper-wrapper {}
+
+
+    .swiper-wrapper {
+        min-height: 50vw;
+    }
 
     .LIPswiper .swiper-wrapper {
         min-height: 105vw;
@@ -362,3 +352,10 @@ html {
     {height:80vw;}
 
 } */
+.row .SHUscaleAN {
+    /* filter: grayscale(1); */
+}
+
+.row .SHUscaleAN:hover {
+    /* filter: grayscale(0); */
+}
